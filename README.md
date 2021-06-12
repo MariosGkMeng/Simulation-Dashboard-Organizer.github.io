@@ -47,13 +47,12 @@ Last but not least, given the fact that VBA is a very old and widely used langua
 There are two possible operation modes for which this tool works.
 
 · **“Mode 1”** is the mode in which the tool connects to a simulator that is capable of text-parsing (usually a scripting environment that engineers use, like MATLAB, or Python). Check Figure below.
-![[Pasted image 20210612161701.png|350]]
 
+<img src=https://user-images.githubusercontent.com/61937432/121778272-e8722c80-cb9e-11eb-948b-50a88353f2d3.png" width="300" height="450" />
 
 · “**Mode 2**” the one in which the simulator is unable to parse text files. That is usually a closed-source software that comes with a GUI. Check Figure below.
-![[Pasted image 20210612161755.png|350]]
 
-           
+ <img src=https://user-images.githubusercontent.com/61937432/121778312-05a6fb00-cb9f-11eb-84ff-6ef031dec15b.png" width="300" height="450" />          
 
 # Start from blank project
 
@@ -92,9 +91,7 @@ Where “d” is the struct or dictionary variable that carries the parameters. 
 
 
 ## Create a  parameter family
-
-           
-
+   
 To enhance organization of your parameters, you can create parameter categories, or “families”. To do so, simply write “fam__familyName (optional_field_name)”.
 
 - Why write “fam__” before the name?
@@ -106,11 +103,11 @@ To enhance organization of your parameters, you can create parameter categories,
 ## View and create notes on parameters
 
 - If you select a parameter cell, its notes automatically pop-up
-- To add a note, click on the " ![[Pasted image 20210612163052.png|50]]" icon at the top of your current view
+- To add a note, click on the "![image](https://user-images.githubusercontent.com/61937432/121778331-1f484280-cb9f-11eb-9845-9d2adbdd6483.png)" icon at the top of your current view
 - To add a picture:
 	- Copy the picture from your source
 	- Paste it in the excel sheet (**NOTE**: **note view mode should be on**)
-	- Press the ![[Pasted image 20210612163144.png|50]] icon (it basically attaches it to the group of notes that correspond to this parameter)
+	- Press the "![image](https://user-images.githubusercontent.com/61937432/121778335-24a58d00-cb9f-11eb-8952-f4708a094946.png)" icon (it basically attaches it to the group of notes that correspond to this parameter)
 
 That way, you won’t need to navigate to other files in order to take notes on the effects of parameters. In addition, parameters can be linked to effects of specific metrics (say, “vehicle acceleration”, “fuel consumption” etc), and you can systematically document effects of parameters on metrics.
 
@@ -119,8 +116,7 @@ That way, you won’t need to navigate to other files in order to take notes on 
 
 Navigate to “**parameter_map**” sheet, column “C” (Picture ???). Simply go to the specific cell that contains that variable and press “Delete” from your keyboard. No need to insert anything in that list, since it is automatically generated. **NOTE: You can only delete one variable at a time. Also, you have to delete that variable from the “control_room”. This command deletes all the notes of that parameter****.**
 
-![[Pasted image 20210612163341.png]]
-
+![image](https://user-images.githubusercontent.com/61937432/121778346-2e2ef500-cb9f-11eb-9ec5-93091365ce72.png)
 
 ## Run simulation in mode 1  
 
@@ -133,15 +129,13 @@ Steps (for MATLAB, more simulators to come in the future):
 
 2. Go to the user interface --> "control_room" sheet and choose an action:
 
-- Pressing “![[Pasted image 20210612163439.png]] ” runs a simulation with the specified parameters (excel writes to autorun file a trigger that is understood by the simulator parser, for instance: “RUN_SIM 1”. Simulator reads this and triggers the simulation process.
+- Pressing “![image](https://user-images.githubusercontent.com/61937432/121778354-35560300-cb9f-11eb-8e9a-8011e801738d.png)” icon runs a simulation with the specified parameters (excel writes to autorun file a trigger that is understood by the simulator parser, for instance: “RUN_SIM 1”. Simulator reads this and triggers the simulation process.
 
-- Pressing “![[Pasted image 20210612163459.png]]” saves the simulation results. Press it only once the simulation is finished (more on that in section ???)
+- Pressing “![image](https://user-images.githubusercontent.com/61937432/121778358-3b4be400-cb9f-11eb-992b-890c7b34e95e.png)” saves the simulation results. Press it only once the simulation is finished (more on that in section ???)
         
 ## Live Simulation dashboard – Check simulation data while simulation is running
 
-            
-
-Navigate to simulation dashboard by clicking the “![[Pasted image 20210612163551.png]] ” icon for the options to appear and then the “ ![[Pasted image 20210612163607.png]] ” icon. As a default mode, some live results are parsed from a textfile when you click on a new cell.
+Navigate to simulation dashboard by clicking the “![image](https://user-images.githubusercontent.com/61937432/121778366-456de280-cb9f-11eb-8fc9-47ff109ff992.png)” icon for the options to appear and then the “![image](https://user-images.githubusercontent.com/61937432/121778369-4acb2d00-cb9f-11eb-882f-1e86f8ebdfc3.png)” icon. As a default mode, some live results are parsed from a textfile when you click on a new cell.
 
 In the example I provided for mode 1, MATLAB prints the computation time for each iteration and the word “PROBLEM” whenever a specific signal problem is encountered. In the live dashboard, the figure shows the CPU time of each iteration (blue curve) and whether a problem was encountered (red curve: 1 when “PROBLEM”).
 
@@ -151,11 +145,8 @@ To modify how the live dashboard works, you will have to change some cell equati
 
 Most people are not aware just how much you can achieve with excel. In this section, you will find some tips that help you make your dashboard easier to and more pleasurable to read.
 
-Go to: View --> Appearance and deselect the boxes, so that you don’t have to always see those column letters and row numbers and equations that occupy your “eye space” when you don’t really need them. ![[Pasted image 20210612163907.png]]
-
-           
-
-           
+Go to: View --> Appearance and deselect the boxes, so that you don’t have to always see those column letters and row numbers and equations that occupy your “eye space” when you don’t really need them.
+![image](https://user-images.githubusercontent.com/61937432/121778386-5c143980-cb9f-11eb-8d9a-88ea7b0e11ee.png)
 
 - Cell formatting --> Check “conditional formatting” on the internet 😉
 	-  Format of parameter value bearing cells that contain formulas (so that you don’t just delete them).
@@ -166,16 +157,18 @@ Go to: View --> Appearance and deselect the boxes, so that you don’t have to a
 
 
 ## Parameter change and simulation history
-           
+          
 
 For me, this is the most important feature of the tool. Its capabilities are:
 
 - Rigorous and easy organization of parameter changes (e.g., if I change parameter “m” from 50 to 100 in the “control_room”, the tool will automatically print: <dd/mm/yyyy> **m:** **50** **-->** **100**)
-- Gather notes of each simulation (write it below the parameter change) and effects of parameters to specific signals and/or indexes. See Picture ?? for an example.
-![[Pasted image 20210612164258.png]]
-- Gather simulation results and have them available for the user when he/she wishes to view them. By pressing the “save sim” button at the control_room (after a simulation has been completed), the plots with the desired results are loaded to the “simulation_history” sheet. The user can view them by clicking once on the number of the simulation. See Picture ??. Information on how the simulator stores the results in Section ???.
-![[Pasted image 20210612164806.png]]
-           
+- Gather notes of each simulation (write it below the parameter change) and effects of parameters to specific signals and/or indexes. See Picture below for an example.
+- 
+![image](https://user-images.githubusercontent.com/61937432/121778404-6a625580-cb9f-11eb-88c0-5fbf58797546.png)
+
+- Gather simulation results and have them available for the user when he/she wishes to view them. By pressing the “save sim” button at the control_room (after a simulation has been completed), the plots with the desired results are loaded to the “simulation_history” sheet. The user can view them by clicking once on the number of the simulation. See Picture below for an example. Information on how the simulator stores the results in Section ???.
+
+![image](https://user-images.githubusercontent.com/61937432/121778414-73ebbd80-cb9f-11eb-8d23-d87c743ca62f.png)
 
 Of course, upon preference you can apply the same functionality of integration between excel and your simulator and have your simulator, at the end of the simulation, show the plots. The script that prints lines in text files from VBA is very simple. Refer to the ??? script.
 **NOTE: Whenever you create a new variable, simulation history also changes. If you do not want to keep those changes, simply navigate to the simulation history and manually delete them.**
