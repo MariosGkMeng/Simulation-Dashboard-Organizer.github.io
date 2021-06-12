@@ -1,7 +1,22 @@
 # simulation-dashboard
 
+
+## What am I looking at?
+
+This is a flexible, highly automated post-processor that I created in order to alleviate my eyes and brain from constant clicking and watching code for many consecutive hours. Once I saw how much it helps me organize my work and understood its potential, I thought it'd be a pitty not to share it.
+
+### Who is it for
+This is a usefull tool for everyone that runs numerous simulations in a specific system (automotive simulations, dynamic systems etc) and wants to be able to seamlessly compare results and track signal changes with respect to parameter changes. 
+
+I am not suggesting that such a thought is unique to myself. There are already decent post-processors out there. One of them is the Data Inspector of Simulink-MATLAB. However, similar to the latter, many are only available in certain simulation environments and often require payment. This tool is generic and can be merged with a large range of software.
+
+### Integrations developed so far
+
+1. Integration with MATLAB
+2. Integration with Python
+3. Integration with GAMS 
+
 ## Motivation
-           
 
 The main goals of this long-awaited tool are:
 
