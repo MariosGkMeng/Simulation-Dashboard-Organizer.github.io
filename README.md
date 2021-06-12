@@ -40,3 +40,15 @@ Last but not least, given the fact that VBA is a very old and widely used langua
 
 [[1]](#_ftnref1) There is a possibility to integrate Python, Javascript and C# to excel. It is in my TODO list for further development for this tool to migrate VBA to Python scripting.
 
+           
+
+## Modes of operation
+
+There are two possible operation modes for which this tool works.
+
+· **“Mode 1”** is the mode in which the tool connects to a simulator that is capable of text-parsing (usually a scripting environment that engineers use, like MATLAB, or Python). Check Figure below.
+![[Pasted image 20210612161701.png|350]]
+
+
+· “**Mode 2**” the one in which the simulator is unable to parse text files. That is usually a closed-source software that comes with a GUI. Check Figure below.
+![[Pasted image 20210612161755.png|350]]
