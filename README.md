@@ -47,8 +47,10 @@ Last but not least, given the fact that VBA is a very old and widely used langua
 There are two possible operation modes for which this tool works.
 
 · **“Mode 1”** is the mode in which the tool connects to a simulator that is capable of text-parsing (usually a scripting environment that engineers use, like MATLAB, or Python). Check Figure below.
+
 <img src="https://user-images.githubusercontent.com/61937432/121777263-de99fa80-cb99-11eb-97ef-04731b24e488.png" width="450" height="300" />
 
 · “**Mode 2**” the one in which the simulator is unable to parse text files. That is usually a closed-source software that comes with a GUI. Check Figure below.
+
 <img src="https://user-images.githubusercontent.com/61937432/121777271-e6f23580-cb99-11eb-9725-59338d710c0b.png" width="450" height="300" />
 
