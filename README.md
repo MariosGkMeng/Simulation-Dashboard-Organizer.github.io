@@ -47,8 +47,9 @@ If you have never used excel in that way and are skeptical, trust me, it is wort
 
 In addition, I believe that one should prefer this tool from other means of creating apps, because coding in VBA and writing functions in excel is much easier than building web-based apps, or apps on languages such as C++ and Java. After all, this tool is meant to be used by simulation engineers, researchers and generally analyzers, not strictly by developers. It is, therefore, easier to manipulate code in an excel-based tool and tailor it to your needs, than a web-based Java app.
 
-Last but not least, given the fact that VBA is a very old and widely used language, it is so easy to google-search solutions to problems and find more than one suggestion in various websites. The VBA community is very large and eager to provide help.
+Do not forget that given the fact that VBA is a very old and widely used language, it is so easy to google-search solutions to problems and find more than one suggestion in various websites. The VBA community is very large and eager to provide help.
 
+Last but not least, it is easy to create simple functionalities in excel, something that most people know how to perform, as opposed to better programming languages. 
   
 
 ---
