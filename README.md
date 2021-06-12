@@ -48,11 +48,11 @@ There are two possible operation modes for which this tool works.
 
 · **“Mode 1”** is the mode in which the tool connects to a simulator that is capable of text-parsing (usually a scripting environment that engineers use, like MATLAB, or Python). Check Figure below.
 
-<img src="https://user-images.githubusercontent.com/61937432/121778272-e8722c80-cb9e-11eb-948b-50a88353f2d3.png" width="300" height="450" />
+<img src="https://user-images.githubusercontent.com/61937432/121778272-e8722c80-cb9e-11eb-948b-50a88353f2d3.png" width="450" height="300" />
 
 · “**Mode 2**” the one in which the simulator is unable to parse text files. That is usually a closed-source software that comes with a GUI. Check Figure below.
 
- <img src="https://user-images.githubusercontent.com/61937432/121778312-05a6fb00-cb9f-11eb-84ff-6ef031dec15b.png" width="300" height="450" />     
+ <img src="https://user-images.githubusercontent.com/61937432/121778312-05a6fb00-cb9f-11eb-84ff-6ef031dec15b.png" width="450" height="300" />     
    
 # Start from blank project
 
