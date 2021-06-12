@@ -216,6 +216,10 @@ Whenever you save a simulation, the signals that are loaded to the excel tool ar
 ## Shapes
            
 
+https://user-images.githubusercontent.com/61937432/121778745-004ab000-cba1-11eb-8af8-1ebda92a6995.mp4
+
+
+
 Shapes that act as buttons cannot be moved by left-clicking because left-clicking triggers their macro-script. To be moved, it must be selected with right click, then press “Esc” in order to close the right-click options, and then drag it with the left click in the desired new position.
 
 **CAUTION:** Most shapes are not safe from accidental deletion!! If you happen to delete a shape, just close the sheet WITHOUT SAVING IT. Exceptions are:
