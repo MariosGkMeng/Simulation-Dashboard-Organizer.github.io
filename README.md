@@ -214,11 +214,6 @@ Let’s say that you are running a large number of simulations and you need to v
 Whenever you save a simulation, the signals that are loaded to the excel tool are stored in another excel file (or csv). Navigate to simulation dashboard and click on the “![image](https://user-images.githubusercontent.com/61937432/121778218-b3fe7080-cb9e-11eb-8965-3c877b5f919f.png)” shape. To view the results of different runs, simply type in the run numbers (e.g., 10 for run10) below the “Run” cell. Notice that the parameters that have different values between those simulations immediately appear next to the plot (that is one of the essential goals of this tool, to be able to get that kind of information in a live manner, without the need for many clicks and display changes).
 
 ## Shapes
-           
-
-https://user-images.githubusercontent.com/61937432/121778745-004ab000-cba1-11eb-8af8-1ebda92a6995.mp4
-
-
 
 Shapes that act as buttons cannot be moved by left-clicking because left-clicking triggers their macro-script. To be moved, it must be selected with right click, then press “Esc” in order to close the right-click options, and then drag it with the left click in the desired new position.
 
