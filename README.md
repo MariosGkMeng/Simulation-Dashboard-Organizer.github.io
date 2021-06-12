@@ -220,3 +220,8 @@ Shapes that act as buttons cannot be moved by left-clicking because left-clickin
 **CAUTION:** Most shapes are not safe from accidental deletion!! If you happen to delete a shape, just close the sheet WITHOUT SAVING IT. Exceptions are:
 
 - Flag type shapes: they are regenerated if the tool notices that one is missing
+
+## Non-foolproof problems
+
+
+
