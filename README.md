@@ -106,10 +106,71 @@ To enhance organization of your parameters, you can create parameter categories,
 ## View and create notes on parameters
 
 - If you select a parameter cell, its notes automatically pop-up
-- To add a note, click on the " ![image](https://user-images.githubusercontent.com/61937432/121777634-ca56fd00-cb9b-11eb-91c5-5ab269b9c87e.png)" icon at the top of your current view
+- To add a note, click on the " ![[Pasted image 20210612163052.png|50]]" icon at the top of your current view
 - To add a picture:
 	- Copy the picture from your source
 	- Paste it in the excel sheet (**NOTE**: **note view mode should be on**)
-	- Press the ![image](https://user-images.githubusercontent.com/61937432/121777639-d04cde00-cb9b-11eb-8f89-f7ffab4f0634.png) icon (it basically attaches it to the group of notes that correspond to this parameter)
+	- Press the ![[Pasted image 20210612163144.png|50]] icon (it basically attaches it to the group of notes that correspond to this parameter)
 
 That way, you won’t need to navigate to other files in order to take notes on the effects of parameters. In addition, parameters can be linked to effects of specific metrics (say, “vehicle acceleration”, “fuel consumption” etc), and you can systematically document effects of parameters on metrics.
+
+## Delete a parameter
+           
+
+Navigate to “**parameter_map**” sheet, column “C” (Picture ???). Simply go to the specific cell that contains that variable and press “Delete” from your keyboard. No need to insert anything in that list, since it is automatically generated. **NOTE: You can only delete one variable at a time. Also, you have to delete that variable from the “control_room”. This command deletes all the notes of that parameter****.**
+
+![[Pasted image 20210612163341.png]]
+
+
+## Run simulation in mode 1  
+
+Find supported simulators (developed so far) in _Appendix_.
+            
+
+Steps (for MATLAB, more simulators to come in the future):
+
+1. Run the “autorun.m” script in your MATLAB that reads the autorun file every (e.g., every 500ms). Leave that script running, **do not interrupt it**! You will have to edit this script first, to set which scripts/functions should run for each different event/trigger.
+
+2. Go to the user interface --> "control_room" sheet and choose an action:
+
+- Pressing “![[Pasted image 20210612163439.png]] ” runs a simulation with the specified parameters (excel writes to autorun file a trigger that is understood by the simulator parser, for instance: “RUN_SIM 1”. Simulator reads this and triggers the simulation process.
+
+- Pressing “![[Pasted image 20210612163459.png]]” saves the simulation results. Press it only once the simulation is finished (more on that in section ???)
+        
+## Live Simulation dashboard – Check simulation data while simulation is running
+
+            
+
+Navigate to simulation dashboard by clicking the “![image](https://user-images.githubusercontent.com/61937432/121777995-7c42f900-cb9d-11eb-8ad4-35fc47c04408.png)” icon for the options to appear and then the “![image](https://user-images.githubusercontent.com/61937432/121777998-806f1680-cb9d-11eb-8fae-1533ec68fd37.png)” icon. As a default mode, some live results are parsed from a textfile when you click on a new cell.
+
+In the example I provided for mode 1, MATLAB prints the computation time for each iteration and the word “PROBLEM” whenever a specific signal problem is encountered. In the live dashboard, the figure shows the CPU time of each iteration (blue curve) and whether a problem was encountered (red curve: 1 when “PROBLEM”).
+
+To modify how the live dashboard works, you will have to change some cell equations in this sheet, so excel knowledge is required.
+
+## Make your GUI more beautiful (to your standards of “beauty”)
+
+Most people are not aware just how much you can achieve with excel. In this section, you will find some tips that help you make your dashboard easier to and more pleasurable to read.
+
+Go to: View --> Appearance and deselect the boxes, so that you don’t have to always see those column letters and row numbers and equations that occupy your “eye space” when you don’t really need them. 
+![image](https://user-images.githubusercontent.com/61937432/121777972-67fefc00-cb9d-11eb-9eb3-ad0c2b12a48e.png)
+
+           
+
+           
+
+- Cell formatting --> Check “conditional formatting” on the internet 😉
+	-  Format of parameter value bearing cells that contain formulas (so that you don’t just delete them).
+- Copy the cell and paste as a connected icon. Then, each time the value and format of the cell changes, the same thing will happen to the icon.
+- Flagging parameters with expressive icons
+	- For parameters you consider critical for your results, you can have the GUI flag them with icons of your preference. Simply navigate to “parameter_map” sheet à “T5” cell and add the exact name of the parameter in the list (leave no empty cells between those parameters!). Once you go back to the control room, the icon will appear next to the parameter.
+	- To change that icon, search for the icon named “potential_hazard__” in the “control_room” sheet, right click on it and select “change icon”.
+
+
+## Parameter change and simulation history
+           
+
+For me, this is the most important feature of the tool. Its capabilities are:
+
+- Rigorous and easy organization of parameter changes (e.g., if I change parameter “m” from 50 to 100 in the “control_room”, the tool will automatically print: <dd/mm/yyyy> **m:** **50** **-->** **100**)
+- Gather notes of each simulation (write it below the parameter change) and effects of parameters to specific signals and/or indexes. See Picture ?? for an example.
+![image](https://user-images.githubusercontent.com/61937432/121777960-59b0e000-cb9d-11eb-97a8-1fdc01f001f2.png)
