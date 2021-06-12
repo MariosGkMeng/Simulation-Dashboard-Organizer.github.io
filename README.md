@@ -141,7 +141,7 @@ Steps (for MATLAB, more simulators to come in the future):
 
             
 
-Navigate to simulation dashboard by clicking the “![image](https://user-images.githubusercontent.com/61937432/121777995-7c42f900-cb9d-11eb-8ad4-35fc47c04408.png)” icon for the options to appear and then the “![image](https://user-images.githubusercontent.com/61937432/121777998-806f1680-cb9d-11eb-8fae-1533ec68fd37.png)” icon. As a default mode, some live results are parsed from a textfile when you click on a new cell.
+Navigate to simulation dashboard by clicking the “![[Pasted image 20210612163551.png]] ” icon for the options to appear and then the “ ![[Pasted image 20210612163607.png]] ” icon. As a default mode, some live results are parsed from a textfile when you click on a new cell.
 
 In the example I provided for mode 1, MATLAB prints the computation time for each iteration and the word “PROBLEM” whenever a specific signal problem is encountered. In the live dashboard, the figure shows the CPU time of each iteration (blue curve) and whether a problem was encountered (red curve: 1 when “PROBLEM”).
 
@@ -151,8 +151,7 @@ To modify how the live dashboard works, you will have to change some cell equati
 
 Most people are not aware just how much you can achieve with excel. In this section, you will find some tips that help you make your dashboard easier to and more pleasurable to read.
 
-Go to: View --> Appearance and deselect the boxes, so that you don’t have to always see those column letters and row numbers and equations that occupy your “eye space” when you don’t really need them. 
-![image](https://user-images.githubusercontent.com/61937432/121777972-67fefc00-cb9d-11eb-9eb3-ad0c2b12a48e.png)
+Go to: View --> Appearance and deselect the boxes, so that you don’t have to always see those column letters and row numbers and equations that occupy your “eye space” when you don’t really need them. ![[Pasted image 20210612163907.png]]
 
            
 
@@ -173,4 +172,59 @@ For me, this is the most important feature of the tool. Its capabilities are:
 
 - Rigorous and easy organization of parameter changes (e.g., if I change parameter “m” from 50 to 100 in the “control_room”, the tool will automatically print: <dd/mm/yyyy> **m:** **50** **-->** **100**)
 - Gather notes of each simulation (write it below the parameter change) and effects of parameters to specific signals and/or indexes. See Picture ?? for an example.
-![image](https://user-images.githubusercontent.com/61937432/121777960-59b0e000-cb9d-11eb-97a8-1fdc01f001f2.png)
+![[Pasted image 20210612164258.png]]
+- Gather simulation results and have them available for the user when he/she wishes to view them. By pressing the “save sim” button at the control_room (after a simulation has been completed), the plots with the desired results are loaded to the “simulation_history” sheet. The user can view them by clicking once on the number of the simulation. See Picture ??. Information on how the simulator stores the results in Section ???.
+![[Pasted image 20210612164806.png]]
+           
+
+Of course, upon preference you can apply the same functionality of integration between excel and your simulator and have your simulator, at the end of the simulation, show the plots. The script that prints lines in text files from VBA is very simple. Refer to the ??? script.
+**NOTE: Whenever you create a new variable, simulation history also changes. If you do not want to keep those changes, simply navigate to the simulation history and manually delete them.**
+
+## How the tool saves and stores simulation results
+           
+Again, this is up to you. The important detail to keep in mind is to maintain the continuity between the user interface and the simulator. They both organize the results using the prefix “@run” (for run 10, write "@run10"). I have placed a script titled “report_struct.m”, for the case that simulator is MATLAB.
+
+## Trigger simulations from another device
+
+           
+
+It is possible to change the simulation parameters and trigger a new simulation from another device. I have chosen dropbox for this task, mainly for its simplicity and reliable connection to local folders.
+
+To be able to use this functionality, first set the excel variable “trig_sim_dropbox” to 1 ([excel variables](https://www.techwalla.com/articles/how-to-use-variables-in-excel)). This commands the tool to scan the dropbox parameter excel file periodically and triggers a simulation if it encounters differences between parameters. Set this variable to 0 if you are not using this functionality, since it slows down the performance of the tool.
+
+### Get feedback from a running simulation to another device
+           
+
+Not all devices can use VBA with excel (e.g., smartphones). So, it’d be best to be able to read some of the results (e.g., some live plots) by having the tool print them in a shared dropbox folder periodically.
+
+1. Set the excel variable “repeat_read_sim” to 1. Set this variable to 0 if you are not using this functionality, since it slows down the performance of the tool.
+2. charts, images: Get the name of the image or chart(s) you wish to export to the shared folder. Add this name to the “Charts to print to dropbox” category in the “project_paths” sheet. **Leave no blank cells between your inputs!**
+
+## Simulate in Mode 2
+If you are working on a project with a software that does not allow any coding, at least to the level of textfile parsing you applied to trigger a simulation, then there is another way.
+
+An important prerequisite is to be able to at least use some textfiles, in the format of the specific software that you are using, in order to specify parameters (up to my experience, you can use both a gui and a text file to manipulate parameters for your simulation in a closed-source software).
+
+You can use the parameter writing functionality of the excel tool to pass the parameters and variable names to your preferred programming environment (in case you don’t opt to use VBA) and generate a parameter file in the format that your simulator uses. That will require programming from your side since any different simulation software uses different formats.
+
+The initiation of the task is identical to the one you have learned so far. You run the “auto_run” script. The difference here stems from the fact that instead of triggering a simulation in the same programming environment of the “auto_run” script, it prints the parameters in the simulator format. Meanwhile, the excel tool periodically checks the last-edited date of the simulator parameter file. Once it recognizes that this file has been modified, it directly opens the simulator to the user’s screen. At this point, the user triggers the simulation manually.
+
+The excel tool periodically checks for production of result files (with already-known file names) and once it recognizes a most recent modification, it can trigger a script that parses those results and prints them in the tool.
+
+## Comparing signals from different simulations-runs
+           
+If you have been working with a large number of simulations (so basically, a huge number of results), you might consider this functionality extra helpful.
+
+Let’s say that you are running a large number of simulations and you need to visualize the effect of some parameters in specific signals. You can always perform this in MATLAB/Python. However, excel can offer a quick and more relaxed visualization of those effects, which works with a few clicks, instead of having to work with code (again).
+
+### How it works
+Whenever you save a simulation, the signals that are loaded to the excel tool are stored in another excel file (or csv). Navigate to simulation dashboard and click on the “![image](https://user-images.githubusercontent.com/61937432/121778218-b3fe7080-cb9e-11eb-8965-3c877b5f919f.png)” shape. To view the results of different runs, simply type in the run numbers (e.g., 10 for run10) below the “Run” cell. Notice that the parameters that have different values between those simulations immediately appear next to the plot (that is one of the essential goals of this tool, to be able to get that kind of information in a live manner, without the need for many clicks and display changes).
+
+## Shapes
+           
+
+Shapes that act as buttons cannot be moved by left-clicking because left-clicking triggers their macro-script. To be moved, it must be selected with right click, then press “Esc” in order to close the right-click options, and then drag it with the left click in the desired new position.
+
+**CAUTION:** Most shapes are not safe from accidental deletion!! If you happen to delete a shape, just close the sheet WITHOUT SAVING IT. Exceptions are:
+
+- Flag type shapes: they are regenerated if the tool notices that one is missing
