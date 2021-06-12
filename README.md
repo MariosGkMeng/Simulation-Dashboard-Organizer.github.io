@@ -47,10 +47,69 @@ Last but not least, given the fact that VBA is a very old and widely used langua
 There are two possible operation modes for which this tool works.
 
 · **“Mode 1”** is the mode in which the tool connects to a simulator that is capable of text-parsing (usually a scripting environment that engineers use, like MATLAB, or Python). Check Figure below.
+![[Pasted image 20210612161701.png|350]]
 
-<img src="https://user-images.githubusercontent.com/61937432/121777263-de99fa80-cb99-11eb-97ef-04731b24e488.png" width="450" height="300" />
 
 · “**Mode 2**” the one in which the simulator is unable to parse text files. That is usually a closed-source software that comes with a GUI. Check Figure below.
+![[Pasted image 20210612161755.png|350]]
 
-<img src="https://user-images.githubusercontent.com/61937432/121777271-e6f23580-cb99-11eb-9725-59338d710c0b.png" width="450" height="300" />
+           
 
+# Start from blank project
+
+## Control room
+
+In the “control room” you can:
+
+- Define new parameters and change their values
+- Add notes to parameters than only appear when you click on them
+- Trigger a simulation
+- Save a simulation’s results
+- Stop a simulation
+
+A control room that contains a few variables looks like the one in the provided example.
+
+## Set project paths
+
+1. Go to “project_paths” sheet. Set the following paths:
+	1. *“print parameter file”:** This is the path where the parameter file is printed, ready to be parsed from your simulator (applicable for Mode 1)
+	2.  **“write trigger text file”:** This is the path where the trigger file is printed, ready to be parsed from your simulator (applicable for Mode 1). More on trigger file in ???.
+	3.  **“dropbox_folder_linking”:** This is the path where the simulator prints some user-wanted information (such as deviations from a mean variable, computation time, etc). This user wanted information is set in a script inside the simulator
+
+
+## Create a new parameter
+
+Type in the name of the **parameter** (in the same way that it will be read from your simulator). Once written, it is automatically generated in the vault. The corresponding value should be written next to the parameter (at its right). Check the example file for clarification.  ==IMPORTANT NOTE==: **Parameters should ONLY be written in odd columns (e.g. “A”, “C”, “E”, etc) and never before row 6!**
+
+The simulator obtains the parameters in a proper form. Since so far the supported simulators are MATLAB and Python, a convenient and organized way to parse parameters is via struct variables and dictionaries correspondingly. If, for instance, you create a parameter titled “mass” and set a value of, say, “100”, then if your simulator is: 
+       
+- MATLAB, the parameter file will include a line: “d.mass = 100;”
+- Python, the parameter file will include a line: “d[“mass”] = 100”
+
+           
+
+Where “d” is the struct or dictionary variable that carries the parameters. You can change the name of that struct variable in the “parameter_map” sheet, cell “A2”, or variable “struct_name”.
+
+
+## Create a  parameter family
+
+           
+
+To enhance organization of your parameters, you can create parameter categories, or “families”. To do so, simply write “fam__familyName (optional_field_name)”.
+
+- Why write “fam__” before the name?
+	- So far, the program I developed understands parameter families that way
+- What is “optional_field_name”?
+	- The parameters are written in a struct (if simulator is MATLAB) or dictionary (if simulator is Python). If in your code you want to further categorize some parameters and make it easy to read, you can have something like: “d.deb.set_to_zero_when_inf”. The field “deb” can be referring to debugging related, on/off type of parameters. In that case, you write“fam__debugging (deb)”. If you do not want such a categorization, simply set the family like this: “fam__familyName ()”.
+
+
+## View and create notes on parameters
+
+- If you select a parameter cell, its notes automatically pop-up
+- To add a note, click on the " ![image](https://user-images.githubusercontent.com/61937432/121777634-ca56fd00-cb9b-11eb-91c5-5ab269b9c87e.png)" icon at the top of your current view
+- To add a picture:
+	- Copy the picture from your source
+	- Paste it in the excel sheet (**NOTE**: **note view mode should be on**)
+	- Press the ![image](https://user-images.githubusercontent.com/61937432/121777639-d04cde00-cb9b-11eb-8f89-f7ffab4f0634.png) icon (it basically attaches it to the group of notes that correspond to this parameter)
+
+That way, you won’t need to navigate to other files in order to take notes on the effects of parameters. In addition, parameters can be linked to effects of specific metrics (say, “vehicle acceleration”, “fuel consumption” etc), and you can systematically document effects of parameters on metrics.
