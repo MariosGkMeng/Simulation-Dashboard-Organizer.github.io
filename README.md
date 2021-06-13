@@ -183,6 +183,9 @@ Go to: View --> Appearance and deselect the boxes, so that you don’t have to a
 ## Parameter change and simulation history
           
 
+https://user-images.githubusercontent.com/61937432/121816990-77f30a80-cc87-11eb-93a3-a24123879412.mp4
+
+
 For me, this is the most important feature of the tool. Its capabilities are:
 
 - Rigorous and easy organization of parameter changes (e.g., if I change parameter “m” from 50 to 100 in the “control_room”, the tool will automatically print: <dd/mm/yyyy> **m:** **50** **-->** **100**)
@@ -205,8 +208,6 @@ Of course, upon preference you can apply the same functionality of integration b
 Again, this is up to you. The important detail to keep in mind is to maintain the continuity between the user interface and the simulator. They both organize the results using the prefix “@run” (for run 10, write "@run10"). I have placed a script titled “report_struct.m”, for the case that simulator is MATLAB.
 
 ## Trigger simulations from another device
-
-           
 
 It is possible to change the simulation parameters and trigger a new simulation from another device. I have chosen dropbox for this task, mainly for its simplicity and reliable connection to local folders.
 
