@@ -182,7 +182,10 @@ For me, this is the most important feature of the tool. Its capabilities are:
 - Rigorous and easy organization of parameter changes (e.g., if I change parameter “m” from 50 to 100 in the “control_room”, the tool will automatically print: <dd/mm/yyyy> **m:** **50** **-->** **100**)
 - Gather notes of each simulation (write it below the parameter change) and effects of parameters to specific signals and/or indexes. See Picture below for an example.
 - 
-![image](https://user-images.githubusercontent.com/61937432/121778404-6a625580-cb9f-11eb-88c0-5fbf58797546.png)
+
+<img src="https://user-images.githubusercontent.com/61937432/121778404-6a625580-cb9f-11eb-88c0-5fbf58797546.png" width="650" height="400" />
+
+
 
 - Gather simulation results and have them available for the user when he/she wishes to view them. By pressing the “save sim” button at the control_room (after a simulation has been completed), the plots with the desired results are loaded to the “simulation_history” sheet. The user can view them by clicking once on the number of the simulation. See Picture below for an example. Information on how the simulator stores the results in Section ???.
 
