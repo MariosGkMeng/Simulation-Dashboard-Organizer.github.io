@@ -183,7 +183,7 @@ For me, this is the most important feature of the tool. Its capabilities are:
 - Gather notes of each simulation (write it below the parameter change) and effects of parameters to specific signals and/or indexes. See Picture below for an example.
 - 
 
-<img src="https://user-images.githubusercontent.com/61937432/121778404-6a625580-cb9f-11eb-88c0-5fbf58797546.png" width="650" height="400" />
+<img src="https://user-images.githubusercontent.com/61937432/121778404-6a625580-cb9f-11eb-88c0-5fbf58797546.png" width="850" height="400" />
 
 
 
