@@ -126,7 +126,7 @@ https://user-images.githubusercontent.com/61937432/121816212-02853b00-cc83-11eb-
 - To add a note, click on the "![image](https://user-images.githubusercontent.com/61937432/121778331-1f484280-cb9f-11eb-9845-9d2adbdd6483.png)" icon at the top of your current view
 - To add a picture:
 	- Copy the picture from your source
-	- Paste it in the excel sheet (**NOTE**: **note view mode should be on**)
+	- Paste it in the excel sheet (**NOTE**: **note view mode should NOT be on**)
 	- Press the "![image](https://user-images.githubusercontent.com/61937432/121778335-24a58d00-cb9f-11eb-8952-f4708a094946.png)" icon (it basically attaches it to the group of notes that correspond to this parameter)
 
 That way, you won’t need to navigate to other files in order to take notes on the effects of parameters. In addition, parameters can be linked to effects of specific metrics (say, “vehicle acceleration”, “fuel consumption” etc), and you can systematically document effects of parameters on metrics.
