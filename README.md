@@ -161,7 +161,7 @@ To modify how the live dashboard works, you will have to change some cell equati
 
 ## Make your GUI more beautiful (to your standards of “beauty”)
 
-Most people are not aware just how much you can achieve with excel. In this section, you will find some tips that help you make your dashboard easier to and more pleasurable to read.
+Most people are not aware just how much you can achieve with excel. One of the things that is not common knowledge about excel is that you CAN easily make it look good. In this section, you will find some tips that help you make your dashboard easier to and more pleasurable to read.
 
 Go to: View --> Appearance and deselect the boxes, so that you don’t have to always see those column letters and row numbers and equations that occupy your “eye space” when you don’t really need them.
 ![image](https://user-images.githubusercontent.com/61937432/121778386-5c143980-cb9f-11eb-8d9a-88ea7b0e11ee.png)
