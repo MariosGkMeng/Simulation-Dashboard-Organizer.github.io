@@ -189,7 +189,7 @@ For me, this is the most important feature of the tool. Its capabilities are:
 
 - Gather simulation results and have them available for the user when he/she wishes to view them. By pressing the “save sim” button at the control_room (after a simulation has been completed), the plots with the desired results are loaded to the “simulation_history” sheet. The user can view them by clicking once on the number of the simulation. See Picture below for an example. Information on how the simulator stores the results in Section ???.
 
-<img src="https://user-images.githubusercontent.com/61937432/121778414-73ebbd80-cb9f-11eb-8d23-d87c743ca62f.png" width="1200" height="400" />
+![image](https://user-images.githubusercontent.com/61937432/121815755-a7524900-cc80-11eb-94c2-b4c232072a08.png)
 
 Of course, upon preference you can apply the same functionality of integration between excel and your simulator and have your simulator, at the end of the simulation, show the plots. The script that prints lines in text files from VBA is very simple. Refer to the ??? script.
 **NOTE: Whenever you create a new variable, simulation history also changes. If you do not want to keep those changes, simply navigate to the simulation history and manually delete them.**
