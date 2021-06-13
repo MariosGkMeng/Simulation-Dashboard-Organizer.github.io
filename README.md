@@ -120,6 +120,11 @@ To enhance organization of your parameters, you can create parameter categories,
 
 ## View and create notes on parameters
 
+
+https://user-images.githubusercontent.com/61937432/121816212-02853b00-cc83-11eb-810b-8365b7eedf8c.mp4
+
+
+
 - If you select a parameter cell, its notes automatically pop-up
 - To add a note, click on the "![image](https://user-images.githubusercontent.com/61937432/121778331-1f484280-cb9f-11eb-9845-9d2adbdd6483.png)" icon at the top of your current view
 - To add a picture:
