@@ -18,6 +18,10 @@ I am not suggesting that such a thought is unique to myself. There are already d
 2. Integration with Python
 3. Integration with GAMS 
 
+Note that ANY simulator that is able to parse textfiles (e.g. MATLAB and Python) is capable of integrating with the tool. 
+My money is on that most, if not all, simulators that can't parse textfiles can still be integrated to this tool (more on the details later).
+If you happen to use any other simulator, please consider uploading your simulator - specific integration scripts and add that simulator to the above-given list.
+
 ## Prerequisites
 1. Have excel installed in your machine
 2. Be relatively comfortable with excel (no need for VBA in case you don't plan on further developing the tool)
