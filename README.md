@@ -18,6 +18,11 @@ I am not suggesting that such a thought is unique to myself. There are already d
 2. Integration with Python
 3. Integration with GAMS 
 
+## Prerequisites
+1. Have excel installed in your machine
+2. Be relatively comfortable with excel (no need for VBA in case you don't plan on further developing the tool)
+
+
 ## Motivation
 
 The main goals of this long-awaited tool are:
