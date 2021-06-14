@@ -112,6 +112,10 @@ The simulator obtains the parameters in a proper form. Since so far the supporte
 Where “d” is the struct or dictionary variable that carries the parameters. You can change the name of that struct variable in the “parameter_map” sheet, cell “A2”, or variable “struct_name”.
 
 
+https://user-images.githubusercontent.com/61937432/121921321-91588d00-cd41-11eb-99fa-1a6df57d9ea6.mp4
+
+
+
 ### Create a  parameter family
    
 To enhance organization of your parameters, you can create parameter categories, or “families”. To do so, simply write “fam__familyName (optional_field_name)”.
