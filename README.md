@@ -44,7 +44,7 @@ It has been years since I wished to be able to
 
 Of course, if you happen to be working on an already developed software that offers an efficient and pleasing post-processor, you do not need this tool right now. But often you will need to work on projects in which you’ll need to develop scripts (or use someone else’s) that perform the calculations.
 
-Why excel and VBA?
+### Why excel and VBA?
 
 *“What?? VBA?? How are you still using this old-fashioned, limited programming language in 2021??”*
 
@@ -62,12 +62,7 @@ Do not forget that given the fact that VBA is a very old and widely used languag
 
 Last but not least, it is easy to create simple functionalities in excel, something that most people know how to perform, as opposed to better programming languages. 
   
-
----
-
-[[1]](#_ftnref1) There is a possibility to integrate Python, Javascript and C# to excel. It is in my TODO list for further development for this tool to migrate VBA to Python scripting.
-
-           
+----
 
 ## Modes of operation
 
@@ -81,9 +76,9 @@ There are two possible operation modes for which this tool works.
 
  <img src="https://user-images.githubusercontent.com/61937432/121778312-05a6fb00-cb9f-11eb-84ff-6ef031dec15b.png" width="450" height="300" />     
    
-# Start from blank project
+## Start from blank project
 
-## Control room
+### Control room
 
 In the “control room” you can:
 
@@ -95,7 +90,7 @@ In the “control room” you can:
 
 A control room that contains a few variables looks like the one in the provided example.
 
-## Set project paths
+### Set project paths
 
 1. Go to “project_paths” sheet. Set the following paths:
 	1. *“print parameter file”:** This is the path where the parameter file is printed, ready to be parsed from your simulator (applicable for Mode 1)
@@ -103,7 +98,7 @@ A control room that contains a few variables looks like the one in the provided 
 	3.  **“dropbox_folder_linking”:** This is the path where the simulator prints some user-wanted information (such as deviations from a mean variable, computation time, etc). This user wanted information is set in a script inside the simulator
 
 
-## Create a new parameter
+### Create a new parameter
 
 Type in the name of the **parameter** (in the same way that it will be read from your simulator). Once written, it is automatically generated in the vault. The corresponding value should be written next to the parameter (at its right). Check the example file for clarification.  ==IMPORTANT NOTE==: **Parameters should ONLY be written in odd columns (e.g. “A”, “C”, “E”, etc) and never before row 6!**
 
@@ -117,7 +112,7 @@ The simulator obtains the parameters in a proper form. Since so far the supporte
 Where “d” is the struct or dictionary variable that carries the parameters. You can change the name of that struct variable in the “parameter_map” sheet, cell “A2”, or variable “struct_name”.
 
 
-## Create a  parameter family
+### Create a  parameter family
    
 To enhance organization of your parameters, you can create parameter categories, or “families”. To do so, simply write “fam__familyName (optional_field_name)”.
 
@@ -127,7 +122,7 @@ To enhance organization of your parameters, you can create parameter categories,
 	- The parameters are written in a struct (if simulator is MATLAB) or dictionary (if simulator is Python). If in your code you want to further categorize some parameters and make it easy to read, you can have something like: “d.deb.set_to_zero_when_inf”. The field “deb” can be referring to debugging related, on/off type of parameters. In that case, you write“fam__debugging (deb)”. If you do not want such a categorization, simply set the family like this: “fam__familyName ()”.
 
 
-## View and create notes on parameters
+### View and create notes on parameters
 
 https://user-images.githubusercontent.com/61937432/121816212-02853b00-cc83-11eb-810b-8365b7eedf8c.mp4  
 
@@ -142,11 +137,8 @@ https://user-images.githubusercontent.com/61937432/121816860-b63bfa00-cc86-11eb-
 
 That way, you won’t need to navigate to other files in order to take notes on the effects of parameters. In addition, parameters can be linked to effects of specific metrics (say, “vehicle acceleration”, “fuel consumption” etc), and you can systematically document effects of parameters on metrics.
 
-
-
-## Delete a parameter
+### Delete a parameter
            
-
 Navigate to “**parameter_map**” sheet, column “C” (Picture ???). Simply go to the specific cell that contains that variable and press “Delete” from your keyboard. No need to insert anything in that list, since it is automatically generated. **NOTE: You can only delete one variable at a time. Also, you have to delete that variable from the “control_room”. This command deletes all the notes of that parameter****.**
 
 ![image](https://user-images.githubusercontent.com/61937432/121778346-2e2ef500-cb9f-11eb-9ec5-93091365ce72.png)
@@ -224,7 +216,6 @@ To be able to use this functionality, first set the excel variable “trig_sim_d
 
 ### Get feedback from a running simulation to another device
            
-
 Not all devices can use VBA with excel (e.g., smartphones). So, it’d be best to be able to read some of the results (e.g., some live plots) by having the tool print them in a shared dropbox folder periodically.
 
 1. Set the excel variable “repeat_read_sim” to 1. Set this variable to 0 if you are not using this functionality, since it slows down the performance of the tool.
