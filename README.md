@@ -256,4 +256,7 @@ Shapes that act as buttons cannot be moved by left-clicking because left-clickin
 ## Non-foolproof problems
 
 
+## Current pain points
 
+1. The excel file that contains signals from previous simulations takes time to load --> maybe use a database software to integrate with excel
+2. Saving the document takes many seconds
