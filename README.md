@@ -260,4 +260,4 @@ Shapes that act as buttons cannot be moved by left-clicking because left-clickin
 
 1. The excel file that contains signals from previous simulations takes time to load --> maybe use a database software to integrate with excel
 2. Saving the document takes many seconds
-3. Loading multiple signals from a single text file is not real time!  
+3. Writing multiple signals from a single text file to excel range of cells is not real time!  
