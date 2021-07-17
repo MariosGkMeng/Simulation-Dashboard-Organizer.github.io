@@ -105,7 +105,7 @@ The trigger file is the "middle-man" in the communication between excel and the 
 
 Type in the name of the **parameter** (in the same way that it will be read from your simulator). Once written, it is automatically generated in the vault. The corresponding value should be written next to the parameter (at its right). Check the example file for clarification.  ==IMPORTANT NOTE==: **Parameters should ONLY be written in odd columns (e.g. “A”, “C”, “E”, etc) and never before row 6!**
 
-The simulator obtains the parameters in a proper form. Since so far the supported simulators are MATLAB and Python, a convenient and organized way to parse parameters is via struct variables and dictionaries correspondingly. If, for instance, you create a parameter titled “mass” and set a value of, say, “100”, then if your simulator is: 
+The simulator obtains the parameters in a proper syntax (eg MATLAB syntax, Python syntax, etc). Since so far the supported simulators are MATLAB and Python, a convenient and organized way to parse parameters is via struct variables and dictionaries correspondingly. If, for instance, you create a parameter titled “mass” and set a value of, say, “100”, then if your simulator is: 
        
 - MATLAB, the parameter file will include a line: “d.mass = 100;”
 - Python, the parameter file will include a line: “d[“mass”] = 100”
