@@ -258,6 +258,7 @@ Shapes that act as buttons cannot be moved by left-clicking because left-clickin
 
 ## Current pain points
 
-1. The excel file that contains signals from previous simulations takes time to load --> maybe use a database software to integrate with excel
+1. The excel file that contains signals from previous simulations takes time to load --> maybe use a database software to integrate with excel. Temporary solution is to "break-down" the signal_excel_file to smaller signal files that contain less runs.
 2. Saving the document takes many seconds
-3. Writing multiple signals from a single text file to excel range of cells is not real time!  
+3. Before closing the document, signal data have to be deleted (in case that they are too many for excel to handle in real time). Otherwise, it can cause problems upon reopening with "insufficient memory". After a run is saved, this is done automatically.
+4. Writing multiple signals from a single text file to excel range of cells is not real time!  
