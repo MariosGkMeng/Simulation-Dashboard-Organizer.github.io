@@ -255,6 +255,7 @@ Shapes that act as buttons cannot be moved by left-clicking because left-clickin
 
 ## Non-foolproof problems
 
+1. Up till now, there is no protection from accidental delete of cells that are critical parts of the script --> You delete it, you suffer :P 
 
 ## Current pain points
 
