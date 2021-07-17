@@ -49,7 +49,13 @@ for i = 1:length(t)-1
         fclose(fid);
     end
     
+    read_command_stop_sim = ...
+        read_marios_command(d.autoCmdFile, 'stop_sim');
     
+    if strcmp(read_command_stop_sim, 'stop_sim')
+        disp('EXITING SIMULATION!!')
+        break;
+    end
 end
 
 
