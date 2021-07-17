@@ -163,7 +163,8 @@ Steps (for MATLAB, more simulators to come in the future):
 
 - Pressing “![image](https://user-images.githubusercontent.com/61937432/121778354-35560300-cb9f-11eb-8e9a-8011e801738d.png)” icon runs a simulation with the specified parameters (excel writes to autorun file a trigger that is understood by the simulator parser, for instance: “RUN_SIM 1”. Simulator reads this and triggers the simulation process.
 
-- Pressing “![image](https://user-images.githubusercontent.com/61937432/121778358-3b4be400-cb9f-11eb-992b-890c7b34e95e.png)” saves the simulation results. Press it only once the simulation is finished (more on that in section ???)
+- Pressing “![image](https://user-images.githubusercontent.com/61937432/121778358-3b4be400-cb9f-11eb-992b-890c7b34e95e.png)” saves the simulation results. Press it only once the simulation is finished.
+
         
 ## Live Simulation dashboard – Check simulation data while simulation is running
 
