@@ -267,3 +267,12 @@ Shapes that act as buttons cannot be moved by left-clicking because left-clickin
 2. Saving the document takes many seconds
 3. Before closing the document, signal data have to be deleted (in case that they are too many for excel to handle in real time). Otherwise, it can cause problems upon reopening with "insufficient memory". After a run is saved, this is done automatically.
 4. Writing multiple signals from a single text file to excel range of cells is not real time!  
+
+
+
+# User Guide TODOs
+1. Create video on saving the simulation 
+2. Comparing simulations from different runs
+3. Choosing signals to print
+4. Generating On-Line diagnostics
+
