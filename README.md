@@ -276,4 +276,5 @@ Shapes that act as buttons cannot be moved by left-clicking because left-clickin
 2. Comparing simulations from different runs
 3. Choosing signals to print
 4. Generating On-Line diagnostics
+5. Trigger text file: write that I do no need to change that as a user
 
