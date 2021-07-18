@@ -1,7 +1,5 @@
 # simulation-dashboard
 
-## NOTE
-Tool with source code will be uploaded soon ;) 
 
 ## What am I looking at?
 
