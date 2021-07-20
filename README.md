@@ -175,7 +175,7 @@ In the example I provided for mode 1, MATLAB prints the computation time for eac
 
 To modify how the live dashboard works, you will have to change some cell equations in this sheet, so excel knowledge is required.
 
-In order to view the simulation results, simply press the "<img src="https://user-images.githubusercontent.com/61937432/121778404-6a625580-cb9f-11eb-88c0-5fbf58797546.png" width="200" height="200" />" icon in the simulation dashboard. The plots are refreshed when you press double left click on a random cell.
+In order to view the simulation results, simply press the "<img src="https://user-images.githubusercontent.com/61937432/126342023-2d9449fb-6f90-4377-a8da-d8f6c30f5f2b.png" width="50" height="50" />" icon in the simulation dashboard. The plots are refreshed when you press double left click on a random cell.
 
 
 https://user-images.githubusercontent.com/61937432/126341169-c6d30dc1-7e67-43e3-b28b-88bc9df1add0.mp4
