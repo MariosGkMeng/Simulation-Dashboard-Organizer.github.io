@@ -18,3 +18,5 @@ dt = 0.1;
 t_end = 25;
 md_sol_track = "...\Matlab example\solution_tracker.txt";
 
+The "runs_sim.m" script is the one that performs the calculations, i.e. the simulation. 
+
