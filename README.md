@@ -284,4 +284,5 @@ Shapes that act as buttons cannot be moved by left-clicking because left-clickin
 4. Generating On-Line diagnostics
 5. Trigger text file: write that I do no need to change that as a user
 6. "Control room" should specify that it is a sheet
+7. What "parameter_file" does
 
