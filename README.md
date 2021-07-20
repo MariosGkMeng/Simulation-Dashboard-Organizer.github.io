@@ -175,6 +175,14 @@ In the example I provided for mode 1, MATLAB prints the computation time for eac
 
 To modify how the live dashboard works, you will have to change some cell equations in this sheet, so excel knowledge is required.
 
+In order to view the simulation results, simply press the "![image](https://user-images.githubusercontent.com/61937432/126340828-904f820b-8c22-4092-be2d-77c05cf2b519.png)" icon in the simulation dashboard. The plots are refreshed when you press double left click on a random cell.
+
+
+https://user-images.githubusercontent.com/61937432/126341169-c6d30dc1-7e67-43e3-b28b-88bc9df1add0.mp4
+
+
+
+
 ## Make your GUI more beautiful (to your standards of “beauty”)
 
 Most people are not aware just how much you can achieve with excel. One of the things that is not common knowledge about excel is that you CAN easily make it look good. In this section, you will find some tips that help you make your dashboard easier to and more pleasurable to read.
