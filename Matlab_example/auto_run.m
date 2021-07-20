@@ -13,6 +13,7 @@ T_sampl = 0.01;
 
 simulated_automatically = 0;
 fileName = ['auto_commands2.txt'];
+d.autoCmdFile = fileName;
 while true %(user_command == 0)
     pause(T_sampl)
     user_command = read_user_command(fileName, 'run');
@@ -31,22 +32,23 @@ while true %(user_command == 0)
         % ====================================================================================
 
         simulated_automatically = 1;
-        fclose(fid); 
-        % NOTE: fclose is used to prevent following MATLAB error:
-        % "Too many open files. Close files to prevent MATLAB
-        % instability.'
-
+        try
+            fclose(fid); 
+            % NOTE: fclose is used to prevent following MATLAB error:
+            % "Too many open files. Close files to prevent MATLAB
+            % instability.'
+        catch
+            % nothing
+        end
+        
+        clc
     end
 
     if strcmp(user_command_save_sim, 'save_sim') && simulated_automatically
-        try
-			% YOUR INPUT ====================================================================================
-            report_struct(d, res, '')
-			% ====================================================================================
-        catch
-            fprintf(1,'The identifier was:\n%s',e.identifier);
-            fprintf(1,'There was an error! The message was:\n%s',e.message);
-        end
+        % YOUR INPUT ====================================================================================
+%         report_struct(d, res, '')
+        % ====================================================================================
+
         simulated_automatically = 0;
     end
     

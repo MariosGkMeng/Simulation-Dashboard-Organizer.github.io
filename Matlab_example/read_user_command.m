@@ -24,8 +24,9 @@ function [user_command, d_var] = read_user_command(fileName, cmode)
             rNum = 'rNum';
             if contains(tline, rNum)
                 iRun = str2num(strrep(tline(ii+length(rNum):end), ' ', ''));
+                d_var.iRun = iRun;
             end
-            d_var.iRun = iRun;
+            
         case 'save_sim'
             if ctl
                 if contains(tline, 'save_sim')

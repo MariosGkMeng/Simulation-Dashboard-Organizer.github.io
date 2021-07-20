@@ -32,7 +32,8 @@ for i = 1:length(t)-1
         pause(T_delay);
         z = z + 1;
         for k = 1:length(sig_txt)
-            eval([sig_txt{k}, '=', sig_txt{k}(1:end-1), '(i-',num2str(n_print),'+1:i);'])
+            eval([sig_txt{k}, '=', sig_txt{k}(1:end-1),...
+                '(i-',num2str(n_print),'+1:i);'])
         end
         % write current simulation data
         filePrnt = ['iter_data_print_to_dashb_',...
@@ -50,7 +51,7 @@ for i = 1:length(t)-1
     end
     
     read_command_stop_sim = ...
-        read_marios_command(d.autoCmdFile, 'stop_sim');
+        read_user_command(d.autoCmdFile, 'stop_sim');
     
     if strcmp(read_command_stop_sim, 'stop_sim')
         disp('EXITING SIMULATION!!')
