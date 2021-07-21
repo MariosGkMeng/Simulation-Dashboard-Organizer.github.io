@@ -289,4 +289,5 @@ Shapes that act as buttons cannot be moved by left-clicking because left-clickin
 9. AutoRun: Need to only run it once (rerun if interrupted)
 10. Delete the "Save" case in MATLAB when save is triggered
 11. Faster saving with "range" function
+12. List with runs: maybe can hide older runs
 
