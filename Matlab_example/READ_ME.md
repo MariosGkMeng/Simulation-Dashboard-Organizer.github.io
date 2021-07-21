@@ -4,7 +4,7 @@ The system simulated here is a system of two 1st order nonlinear differential sy
 Open the "Sim_Dashboard.xlsm", which is the developed tool. From there you can change system parameters, run simulations, store results, compare results etc (refer to "READ_ME" in the main folder)
 
 
-You will have to add the parameters in the excel tool from scratch. You can use thw following as a starting point. 
+You will have to add the parameters in the excel tool from scratch. You can use the following as a starting point (order does not matter). 
 
 c0 = 0.1335;
 c1 = 2;
