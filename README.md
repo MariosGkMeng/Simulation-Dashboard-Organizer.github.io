@@ -287,4 +287,5 @@ Shapes that act as buttons cannot be moved by left-clicking because left-clickin
 7. What "parameter_file" does
 8. User problem: cannot rename parameters, only delete the old ones and add the new ones
 9. AutoRun: Need to only run it once (rerun if interrupted)
+10. Delete the "Save" case in MATLAB when save is triggered
 
