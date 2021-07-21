@@ -288,4 +288,5 @@ Shapes that act as buttons cannot be moved by left-clicking because left-clickin
 8. User problem: cannot rename parameters, only delete the old ones and add the new ones
 9. AutoRun: Need to only run it once (rerun if interrupted)
 10. Delete the "Save" case in MATLAB when save is triggered
+11. Faster saving with "range" function
 
