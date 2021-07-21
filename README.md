@@ -277,7 +277,7 @@ Shapes that act as buttons cannot be moved by left-clicking because left-clickin
 
 
 
-# User Guide TODOs
+# User Guide TODOs (for the developers only)
 1. Create video on saving the simulation 
 2. Comparing simulations from different runs
 3. Choosing signals to print
@@ -285,4 +285,5 @@ Shapes that act as buttons cannot be moved by left-clicking because left-clickin
 5. Trigger text file: write that I do no need to change that as a user
 6. "Control room" should specify that it is a sheet
 7. What "parameter_file" does
+8. User problem: cannot rename parameters, only delete the old ones and add the new ones
 
