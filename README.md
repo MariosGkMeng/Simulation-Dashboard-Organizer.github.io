@@ -26,6 +26,7 @@ If you happen to use any other simulator, please consider uploading your simulat
 ## Prerequisites
 1. Have excel installed in your machine
 2. Be relatively comfortable with excel (no need for VBA in case you don't plan on further developing the tool)
+3. For the MATLAB example: have MATLAB installed
 
 
 ## Motivation
