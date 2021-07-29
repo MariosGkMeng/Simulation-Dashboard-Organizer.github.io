@@ -99,7 +99,7 @@ A control room that contains a few variables looks like the one in the provided 
 	2.  **“write trigger text file”:** This is the path where the trigger file is printed, ready to be parsed from your simulator (applicable for Mode 1). See next section to get info on how the trigger file works.
 	3.  **“dropbox_folder_linking”:** This is the path where the simulator prints some user-wanted information (such as deviations from a mean variable, computation time, etc). This user wanted information is set in a script inside the simulator
 
-#### Trigger file
+#### _Trigger file (optinal)_
 The trigger file is the "middle-man" in the communication between excel and the simulator. The way that they communicate is up to the user - developer. For example, to trigger the simulation, the excel tool writes "Runs sim: 1". The simulator reads this file instantaneously and triggers the simulation. After a fixed amount of time (which is larger than the amount of time that it takes the simulator to read the trigger file, excel writes "Runs sim: 0", which is the neutral-"no simulation" state)
 
 
