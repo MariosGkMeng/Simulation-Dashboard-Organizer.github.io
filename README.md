@@ -85,7 +85,7 @@ There are two possible operation modes for which this tool works.
 In the “control room” sheet you can:
 
 - Define new parameters and change their values
-- Add notes to parameters than only appear when you click on them
+- Add notes to parameters that only appear when you click on the parameter itself
 - Trigger a simulation
 - Save a simulation’s results
 - Stop a simulation
