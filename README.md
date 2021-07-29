@@ -82,7 +82,7 @@ There are two possible operation modes for which this tool works.
 
 ### Control room
 
-In the “control room” you can:
+In the “control room” sheet you can:
 
 - Define new parameters and change their values
 - Add notes to parameters than only appear when you click on them
