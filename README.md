@@ -279,16 +279,16 @@ Shapes that act as buttons cannot be moved by left-clicking because left-clickin
 
 
 # User Guide TODOs (for the developers only)
-1. Create video on saving the simulation 
-2. Comparing simulations from different runs
-3. Choosing signals to print
-4. Generating On-Line diagnostics
-5. Trigger text file: write that I do no need to change that as a user
-6. "Control room" should specify that it is a sheet
-7. What "parameter_file" does
-8. User problem: cannot rename parameters, only delete the old ones and add the new ones
-9. AutoRun: Need to only run it once (rerun if interrupted)
-10. Delete the "Save" case in MATLAB when save is triggered
-11. Faster saving with "range" function
-12. List with runs: maybe can hide older runs
+- [ ] Create video on saving the simulation 
+- [x] Comparing simulations from different runs
+- [ ] Choosing signals to print
+- [ ] Generating On-Line diagnostics
+- [ ] Trigger text file: write that I do no need to change that as a user
+- [ ] "Control room" should specify that it is a sheet
+- [ ] What "parameter_file" does
+- [ ] User problem: cannot rename parameters, only delete the old ones and add the new ones
+- [ ] AutoRun: Need to only run it once (rerun if interrupted)
+- [ ] Delete the "Save" case in MATLAB when save is triggered
+- [ ] Faster saving with "range" function
+- [ ] List with runs: maybe can hide older runs
 
