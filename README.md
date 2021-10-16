@@ -1,7 +1,8 @@
 # simulation-dashboard
 
 ## Languages used
-- VBA
+- VBA (in Excel)
+- Python, which sends plot images to Obsidian (to be uploaded soon)
 
 
 ## What am I looking at?
