@@ -12,7 +12,9 @@ This is a flexible, highly automated post-processor that I created in order to a
 ### Who is it for
 This is a usefull tool for everyone who's work requires running numerous simulations (automotive simulations, dynamic systems etc) and wants to be able to seamessly compare results and track signal changes with respect to system parameter changes. 
 
-I am not suggesting that such a thought is unique to myself. There are already decent post-processors out there. One of them is the Data Inspector of Simulink-MATLAB. However, similar to the latter, most are only available in certain simulation environments and require payment. This tool is generic and can be merged with a significant range of external software.
+I am not suggesting that such a thought is unique to myself. There are already decent post-processors out there. One of them is the Data Inspector of Simulink-MATLAB. However, similar to the latter, most are only available in certain simulation environments and require payment. 
+
+The tool presented here is generic and can be merged with a significant range of external software.
 
 ### Integrations developed so far
 
